@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>FIRSTMOD</AssemblyName>
+    <RootNamespace>FIRSTMOD</RootNamespace>
+    <!-- İkon eklemek isterseniz: Resources\app.ico dosyasını ekleyip
+         <ApplicationIcon>Resources\app.ico</ApplicationIcon> satırını buraya ekleyin -->
+
+    <!-- Tek dosya (single-file), self-contained, 64-bit Windows yayın ayarları -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+    <SelfContainedPublishSingleFile>true</SelfContainedPublishSingleFile>
+
+    <!-- Sürüm / uygulama bilgileri -->
+    <Version>1.0.0</Version>
+    <Product>FIRSTMOD</Product>
+    <AssemblyTitle>FIRSTMOD - CEF Boost</AssemblyTitle>
+    <Company>FIRSTMOD</Company>
+    <Copyright>FIRSTMOD</Copyright>
+
+    <!-- Uygulama yönetici izni istemesin (mümkün olduğunca az izin) -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+</Project>
